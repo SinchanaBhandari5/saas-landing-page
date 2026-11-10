@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f9ff;
+    color: #222;
+}
+
+/* Navigation */
+header {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #00000010;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: #6546d7;
+    font-size: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #6546d7;
+}
+
+/* Hero */
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    color: white;
+    background: linear-gradient(120deg, #4933a8, #9275ed);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tag {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #6546d7;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hero .btn {
+    background: white;
+    color: #6546d7;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Common Sections */
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #30205f;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* Features */
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.emoji {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #6546d7;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Pricing */
+.pricing {
+    background: #eeeaff;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background: white;
+    padding: 35px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.price-card h3 {
+    color: #6546d7;
+    margin-bottom: 15px;
+}
+
+.price-card h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.price-card p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.price-card .btn {
+    margin-top: 15px;
+}
+
+.popular {
+    border: 2px solid #6546d7;
+}
+
+/* Signup */
+.signup-section {
+    background: white;
+}
+
+form {
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #9275ed;
+    border-color: #6546d7;
+}
+
+form button {
+    width: 100%;
+}
+
+#message {
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+/* Dashboard */
+.dashboard {
+    background: #eeeaff;
+}
+
+.dashboard-card {
+    max-width: 450px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+    line-height: 2;
+}
+
+.dashboard-card h3 {
+    color: #6546d7;
+    margin-bottom: 15px;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* Footer */
+footer {
+    background: #24164e;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+}

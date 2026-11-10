@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launchly - Grow Your Business</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>Launchly.</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tag">YOUR BUSINESS, SIMPLIFIED</p>
+
+            <h2>Build Better.<br>Grow Faster.</h2>
+
+            <p>
+                Manage your work, improve productivity
+                and grow your business with Launchly.
+            </p>
+
+            <a href="#signup" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <h2>Our Features</h2>
+        <p class="subtitle">
+            Everything you need to work smarter.
+        </p>
+
+        <div class="features-container">
+
+            <div class="feature-card">
+                <div class="emoji">📊</div>
+                <h3>Analytics</h3>
+                <p>Track your progress and understand your business performance.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="emoji">⚡</div>
+                <h3>Productivity</h3>
+                <p>Complete your tasks faster with simple management tools.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="emoji">🔒</div>
+                <h3>Security</h3>
+                <p>Keep your account information organized and protected.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <h2>Simple Pricing</h2>
+        <p class="subtitle">Choose a plan that suits you.</p>
+
+        <div class="pricing-container">
+
+            <div class="price-card">
+                <h3>Basic</h3>
+                <h2>Free</h2>
+                <p>Basic features</p>
+                <p>Task management</p>
+                <p>Basic support</p>
+                <a href="#signup" class="btn">Choose Plan</a>
+            </div>
+
+            <div class="price-card popular">
+                <h3>Pro</h3>
+                <h2>₹499/month</h2>
+                <p>All basic features</p>
+                <p>Advanced analytics</p>
+                <p>Priority support</p>
+                <a href="#signup" class="btn">Choose Plan</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="section signup-section" id="signup">
+        <h2>Create Your Account</h2>
+        <p class="subtitle">Join Launchly today!</p>
+
+        <form id="signupForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+                minlength="2"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Create a password (minimum 6 characters)"
+                required
+                minlength="6"
+            >
+
+            <button type="submit" class="btn">
+                Create Account
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <!-- Thank You Dashboard -->
+    <section class="section dashboard" id="dashboard" hidden>
+        <h2>Welcome to Launchly!</h2>
+        <p class="subtitle">
+            Your sign-up has been completed successfully.
+        </p>
+
+        <div class="dashboard-card">
+            <h3>Account Details</h3>
+            <p id="userName"></p>
+            <p id="userEmail"></p>
+            <p class="status">Account Status: Registered</p>
+            <button id="logoutBtn" class="btn">
+                Back to Home
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Launchly. All Rights Reserved.</p>
+        <p>Designed for better productivity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
